@@ -1,5 +1,5 @@
 # KanBan styled Dragable Task-Management System
-### A Express.JS backend application with Model-Controller styled code layout
+### An [Express.JS](https://www.npmjs.com/package/express) backend application with Model-Controller styled code layout (Uses [Mongoose](https://www.npmjs.com/package/mongoose) for mongoDB)
 ---
 
 ## Get Started
