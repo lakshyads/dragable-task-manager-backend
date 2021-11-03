@@ -1,5 +1,5 @@
 # KanBan styled Dragable Task-Management System
-### A Express.JS backend application with Model-Controller styled code layout
+### An [Express.JS](https://www.npmjs.com/package/express) backend application with Model-Controller styled code layout (Uses [Mongoose](https://www.npmjs.com/package/mongoose) for mongoDB)
 ---
 
 ## Get Started
@@ -15,7 +15,7 @@ Base url: ```http://localhost:3002/taskmanager/api/v1/```
 * http://localhost:3002/taskmanager/api/v1/user ```GET``` ```POST``` ```PATCH``` ```DELETE```
 * http://localhost:3002/taskmanager/api/v1/task ```GET``` ```POST``` ```PATCH``` ```DELETE```
 
-### The App is configured to on port 3002 by default. Fell free to modify it as per your will.
+### The App is configured to run on port 3002 by default. Fell free to modify it as per your will.
 ---
 ## Frontend for this project
 
