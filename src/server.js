@@ -19,6 +19,23 @@ server.use((req, res, next) => {
 require('./utils/db.utils')();
 
 // configure routes
+server.get('/', (req, res) => {
+  res.status(200).send({
+    path: '/',
+    status: 'OK',
+    availableRoutes: [
+      {
+        path: '/taskmanager/api/v1',
+        apiVersion: 'v1',
+        status: 'OK',
+        availableRoutes: [
+          { path: '/user', methods: ['GET', 'POST', 'PATCH', 'DELETE'] },
+          { path: '/task', methods: ['GET', 'POST', 'PATCH', 'DELETE'] },
+        ],
+      },
+    ],
+  });
+});
 server.use('/taskmanager/api/v1', require('./routes/routes'));
 
 // start server

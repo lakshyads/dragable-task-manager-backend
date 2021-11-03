@@ -2,6 +2,18 @@ const router = require('express').Router();
 const userController = require('../controllers/user.controller');
 const taskController = require('../controllers/task.controller');
 
+// Home route
+router.get('/', (req, res) => {
+  res.status(200).send({
+    path: '/taskmanager/api/v1',
+    apiVersion: 'v1',
+    status: 'OK',
+    availableRoutes: [
+      { path: '/user', methods: ['GET', 'POST', 'PATCH', 'DELETE'] },
+      { path: '/task', methods: ['GET', 'POST', 'PATCH', 'DELETE'] },
+    ],
+  });
+});
 // User routes
 router
   .route('/user')
