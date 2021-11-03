@@ -7,8 +7,8 @@ const User = require('../models/user.model');
  */
 exports.create = async (req, res) => {
   if (!req.body.name || req.body.name === '')
-    return res.status(500).send({
-      status: 'Create Failed',
+    return res.status(400).send({
+      status: 'Invalid request',
       message: `Field 'userName' cannot be empty.`,
     });
   const user = new User(req.body);

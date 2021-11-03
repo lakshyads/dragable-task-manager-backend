@@ -7,13 +7,13 @@ const Task = require('../models/task.model');
  */
 exports.create = async (req, res) => {
   if (!req.body.title || req.body.title === '')
-    return res.status(500).send({
-      status: 'Create Failed',
+    return res.status(400).send({
+      status: 'Invalid request',
       message: `Field 'title' cannot be empty.`,
     });
   if (!req.body.user || req.body.user === '')
-    return res.status(500).send({
-      status: 'Create Failed',
+    return res.status(400).send({
+      status: 'Invalid request',
       message: `Field 'user' cannot be empty.`,
     });
   const task = new Task(req.body);
