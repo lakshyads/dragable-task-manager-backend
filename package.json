@@ -4,8 +4,8 @@
   "description": "Backend for trello like task management system",
   "main": "server.js",
   "scripts": {
-    "start": "node src\\server.js",
-    "dev": "nodemon src\\server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "author": "Lakshya Dev Singh",
   "license": "ISC",
